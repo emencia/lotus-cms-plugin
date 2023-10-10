@@ -1,0 +1,23 @@
+{% load i18n  lotus%}
+{% block lotus_content %}
+    {% spaceless %}
+    <div class="g-col-12">                 
+        <a class="link-black d-flex align-items-center {% if lotus_stage == 'articles' %} active{% endif %}" href="{% url 'lotus:article-index' %}">
+            Toutes les actualités 
+            <span class="btn btn-secondary spot btn-sm text-white ms-1">
+                <i class="icon-arrow-forward spot"></i>
+            </span>
+        </a>
+        <div class="swiper-scroller position-relative mt-6">
+            <div class="swiper-wrapper">
+                {% for article in articles %}
+                    <div class="swiper-slide">
+                        {% include "lotus/article/partials/card-img-classic.html" with article_object=article from="articles" %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    {% endspaceless %}
+{% endblock lotus_content %}

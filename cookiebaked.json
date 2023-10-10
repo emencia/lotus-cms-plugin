@@ -1,0 +1,19 @@
+{
+    "__class_name": "LotusCmsPlugin",
+    "_checkout": null,
+    "_cookiecutter_sveetch_python_version": "0.4.1",
+    "_output_dir": "/home/sam-bot/Desktop/EMENCIA/lotus_cms_plugin/lot_cms_plug",
+    "_repo_dir": "/home/sam-bot/.cookiecutters/cookiecutter-sveetch-python",
+    "_template": "https://github.com/sveetch/cookiecutter-sveetch-python.git",
+    "app_name": "lotus_cms_plugin",
+    "author_email": "contact@emencia.com",
+    "author_name": "Emencia",
+    "author_username": "emencia",
+    "include_cli": false,
+    "init_git_repository": false,
+    "package_name": "lotus-cms-plugin",
+    "project_name": "lotus-cms-plugin",
+    "project_short_description": "A Django CMS plugin application package related to django-blog-lotus.",
+    "pypi_username": "emencia",
+    "version": "0.1.0"
+}
