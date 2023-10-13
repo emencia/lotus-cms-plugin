@@ -12,7 +12,7 @@
             <div class="swiper-wrapper">
                 {% for article in articles %}
                     <div class="swiper-slide">
-                        {% include "lotus/article/partials/card-img-classic.html" with article_object=article from="articles" %}
+                        {% include "partials/card-img-classic.html" with article_object=article from="articles" %}
                     </div>
                 {% endfor %}
             </div>
