@@ -1,0 +1,70 @@
+{% load i18n lotus smart_image %}{% spaceless %}
+
+<div class="card border rounded-1 is-classic is-info-hover  {% article_states article_object prefix="article--" %}" title="">
+    <div class="card-img overflow-hidden">
+        {% if article_object.cover %}
+        {% media_thumb article_object.cover "600x400" crop="center" as cover_thumb %}
+        <img src="{{ cover_thumb.url }}" class="card-img-top" alt="">
+        {% endif %}
+    </div>
+    <div class="card-img-overlay">
+        <div class="d-flex flex-column justify-content-between align-items-start h-100">
+            <div >
+                <span class="badge bg-black text-white text-emp fs-9">{{ article_object.publish_datetime|date }}</span>
+                {% with tags=article_object.get_tags %}
+                    {% if tags %}
+                            {% for tag in tags %}
+                            <a class=" fs-8 ms-0"
+                                href="{% url "lotus:tag-detail" tag=tag.slug %}">
+                                #{{ tag.name }}
+                            </a>
+                            {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="lh-1">
+            {% for category in article_object.get_categories %}
+            <a class="badge cat bg-secondary text-white me-1" href="./cat">{{ category.title }}</a>{% if not forloop.last %} {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="card-body d-flex flex-column align-items-start align-content-stretch mb-0  position-absolute bottom-0 w-100 p-1">
+        <div class="w-100">
+            <h5 class="h4 card-title lc-2">{{ article_object.title }}</h5>
+        </div>
+        <p class="fs-6 w-100 m-0 lc-1">
+            {{ article_object.introduction|safe|striptags }}
+        </p>
+    </div>
+
+    {% if user.is_authenticated and user.is_staff %}
+        {% article_state_list article as article_states %}
+        {% if "featured" in article_states or "pinned" in article_states or "draft" in article_states or "private" in article_states or "passed" in article_states or "not-yet" in article_states %}
+            <p class="states">
+                {% if "featured" in article_states %}
+                    <i class="bi bi-star" title="{% trans "Featured" %}" role="img" aria-label="{% trans "Featured" %}"></i>
+                {% endif %}
+                {% if "pinned" in article_states %}
+                    <i class="bi bi-pin-angle" title="{% trans "Pinned" %}" role="img" aria-label="{% trans "Pinned" %}"></i>
+                {% endif %}
+                {% if "draft" in article_states %}
+                    <i class="bi bi-pen" title="{% trans "Draft" %}" role="img" aria-label="{% trans "Draft" %}"></i>
+                {% endif %}
+                {% if "private" in article_states %}
+                    <i class="bi bi-key" title="{% trans "Private" %}" role="img" aria-label="{% trans "Private" %}"></i>
+                {% endif %}
+                {% if "not-yet" in article_states %}
+                    <i class="bi bi-calendar-event" title="{% trans "Scheduled publication" %}" role="img" aria-label="{% trans "Scheduled publication" %}"></i>
+                {% endif %}
+                {% if "passed" in article_states %}
+                    <i class="bi bi-calendar2-x" title="{% trans "Ended publication" %}" role="img" aria-label="{% trans "Ended publication" %}"></i>
+                {% endif %}
+            </p>
+        {% endif %}
+    {% endif %}
+
+    <a href="{{ article_object.get_absolute_url }}" class="cardLink"></a>
+</div>
+
+{% endspaceless %}
