@@ -6,6 +6,6 @@ Install
 
 Install package in your environment : ::
 
-    pip install lotus-cms-plugin
+    pip install cmsplugin-lotus
 
 For development usage see :ref:`development_install`.

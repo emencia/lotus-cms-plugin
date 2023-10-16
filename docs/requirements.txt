@@ -1,1 +1,1 @@
-lotus-cms-plugin[doc]
+cmsplugin-lotus[doc]

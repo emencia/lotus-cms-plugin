@@ -3,6 +3,6 @@
 Package settings
 ================
 
-.. automodule:: lotus_cms_plugin.contrib.django_configuration
+.. automodule:: cmsplugin_lotus.contrib.django_configuration
     :members:
     :show-inheritance:

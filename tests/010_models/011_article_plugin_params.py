@@ -4,7 +4,7 @@ from django.test import TestCase
 from lotus.choices import STATUS_PUBLISHED
 from lotus.factories import CategoryFactory
 from taggit.models import Tag
-from lotus_cms_plugin.models import ArticlePluginParams
+from cmsplugin_lotus.models import ArticlePluginParams
 
 
 class TestArticlePluginParams(TestCase):

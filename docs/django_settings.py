@@ -116,7 +116,7 @@ TEMPLATES = [
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
             PROJECT_PATH / "templates",
-            BASE_DIR / "lotus_cms_plugin/templates"
+            BASE_DIR / "cmsplugin_lotus/templates"
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -212,8 +212,8 @@ INSTALLED_APPS.extend([
 """
 cmsplugin-blocks configuration using its defaults
 """
-from lotus_cms_plugin.settings import *  # noqa: E402,F401,F403
+from cmsplugin_lotus.settings import *  # noqa: E402,F401,F403
 
 INSTALLED_APPS.extend([
-    "lotus_cms_plugin",
+    "cmsplugin_lotus",
 ])

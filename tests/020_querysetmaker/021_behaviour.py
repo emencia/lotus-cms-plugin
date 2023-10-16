@@ -5,7 +5,7 @@ from lotus.factories import ArticleFactory, CategoryFactory, TagFactory
 from lotus.models import Article, Category
 from taggit.models import Tag
 
-from lotus_cms_plugin.cms_plugins import ArticleQuerySetMaker
+from cmsplugin_lotus.cms_plugins import ArticleQuerySetMaker
 from datetime import timedelta
 from django.utils import timezone
 

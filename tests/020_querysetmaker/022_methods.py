@@ -7,7 +7,7 @@ from lotus.factories import ArticleFactory, CategoryFactory, TagFactory
 from lotus.models import Article, Category
 from taggit.models import Tag
 
-from lotus_cms_plugin.queryset_maker import ArticleQuerySetMaker
+from cmsplugin_lotus.queryset_maker import ArticleQuerySetMaker
 
 
 STATUS_FAKE = 9999

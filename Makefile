@@ -9,9 +9,9 @@ SPHINX_RELOAD_BIN=$(PYTHON_BIN) docs/sphinx_reload.py
 TOX_BIN=$(VENV_PATH)/bin/tox
 TWINE_BIN=$(VENV_PATH)/bin/twine
 
-PACKAGE_NAME=lotus-cms-plugin
-PACKAGE_SLUG=lotus_cms_plugin
-APPLICATION_NAME=lotus_cms_plugin
+PACKAGE_NAME=cmsplugin-lotus
+PACKAGE_SLUG=cmsplugin_lotus
+APPLICATION_NAME=cmsplugin_lotus
 
 # Formatting variables, FORMATRESET is always to be used last to close formatting
 FORMATBLUE:=$(shell tput setab 4)

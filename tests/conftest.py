@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-import lotus_cms_plugin
+import cmsplugin_lotus
 
 
 class FixturesSettingsTestMixin(object):
@@ -24,7 +24,7 @@ class FixturesSettingsTestMixin(object):
         fixtures_path (pathlib.Path): Absolute path to the tests datas.
     """
     def __init__(self):
-        self.application_path = Path(lotus_cms_plugin.__file__).parents[0].resolve()
+        self.application_path = Path(cmsplugin_lotus.__file__).parents[0].resolve()
 
         self.package_path = self.application_path.parent
 
@@ -54,7 +54,7 @@ class FixturesSettingsTestMixin(object):
             PROJECT=str(self.project_path),
             TESTS=str(self.tests_path),
             FIXTURES=str(self.fixtures_path),
-            VERSION=lotus_cms_plugin.__version__,
+            VERSION=cmsplugin_lotus.__version__,
         )
 
 

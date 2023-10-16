@@ -4,7 +4,7 @@
 References
 ==========
 
-This page contains the full reference to lotus-cms-plugin's API built
+This page contains the full reference to cmsplugin-lotus's API built
 from code docstrings by Sphinx extension ``autodoc``.
 
 .. toctree::

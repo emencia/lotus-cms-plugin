@@ -27,8 +27,8 @@ server.watch("*.rst", shell("make html", cwd="docs"))
 
 
 # Watch Python modules for autodoc review
-server.watch("lotus_cms_plugin/*.py", shell("make html", cwd="docs"))
-server.watch("lotus_cms_plugin/*/**.py", shell("make html", cwd="docs"))
+server.watch("cmsplugin_lotus/*.py", shell("make html", cwd="docs"))
+server.watch("cmsplugin_lotus/*/**.py", shell("make html", cwd="docs"))
 
 # Serve the builded documentation
 server.serve(root="docs/_build/html", port=8002, host="0.0.0.0")

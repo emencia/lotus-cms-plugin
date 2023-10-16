@@ -42,14 +42,14 @@ server.watch(
 
 # Watch Python modules for autodoc review
 server.watch(
-    "lotus_cms_plugin/*.py",
+    "cmsplugin_lotus/*.py",
     shell(
         "make html",
         cwd="docs"
     )
 )
 server.watch(
-    "lotus_cms_plugin/*/**.py",
+    "cmsplugin_lotus/*/**.py",
     shell(
         "make html",
         cwd="docs"

@@ -1,14 +1,14 @@
-from lotus_cms_plugin.cms_plugins import LatestArticlesPlugin
-from lotus_cms_plugin.factories.user import UserFactory
+from cmsplugin_lotus.cms_plugins import LatestArticlesPlugin
+from cmsplugin_lotus.factories.user import UserFactory
 from lotus.choices import STATUS_DRAFT, STATUS_PUBLISHED
 from lotus.factories import ArticleFactory, CategoryFactory
-from lotus_cms_plugin.models import (
+from cmsplugin_lotus.models import (
     PRIVATE_ONLY,
     PUBLIC_AND_PRIVATE,
     PUBLIC_ONLY,
 )
-from lotus_cms_plugin.utils.tests.cms_tests import CMSPluginTestCase
-from lotus_cms_plugin.utils.tests.html_response import html_pyquery
+from cmsplugin_lotus.utils.tests.cms_tests import CMSPluginTestCase
+from cmsplugin_lotus.utils.tests.html_response import html_pyquery
 
 from tests.utils import FixturesTestCaseMixin
 

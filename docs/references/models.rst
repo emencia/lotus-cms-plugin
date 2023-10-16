@@ -3,6 +3,6 @@
 ArticlesPluginParams
 ====================
 
-.. automodule:: lotus_cms_plugin.models
+.. automodule:: cmsplugin_lotus.models
     :members:
     :show-inheritance:

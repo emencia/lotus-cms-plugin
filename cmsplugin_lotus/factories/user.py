@@ -2,7 +2,7 @@ import factory
 
 from django.contrib.auth.hashers import make_password
 
-from lotus_cms_plugin.utils.user import safe_get_user_model
+from cmsplugin_lotus.utils.user import safe_get_user_model
 
 
 class UserFactory(factory.django.DjangoModelFactory):

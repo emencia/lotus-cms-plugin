@@ -1,4 +1,4 @@
-from lotus_cms_plugin.models import (
+from cmsplugin_lotus.models import (
     PRIVATE_ONLY,
     PUBLIC_AND_PRIVATE,
     PUBLIC_ONLY,

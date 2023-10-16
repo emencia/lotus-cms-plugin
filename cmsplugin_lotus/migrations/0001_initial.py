@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('status', models.SmallIntegerField(blank=True, choices=[(0, 'draft'), (10, 'available')], default=10, null=True, verbose_name='Display articles with following status')),
                 ('privacy_criterion', models.CharField(choices=[('private_only', 'Private only if accessible'), ('public_and_private', 'Public and private if accessible'), ('public_only', 'Public only')], default='public_only', max_length=128, verbose_name='Select a privacy criterion')),
                 ('featured', models.BooleanField(default=False, help_text="Display only articles with 'featured' set to True.", verbose_name='Display only featured articles')),
-                ('template', models.CharField(choices=[('lotus_cms_plugin/latest_articles/default.html', 'Default')], default='lotus_cms_plugin/latest_articles/default.html', help_text='Used template for content formatting.', max_length=150, verbose_name='Template')),
+                ('template', models.CharField(choices=[('cmsplugin_lotus/latest_articles/default.html', 'Default')], default='cmsplugin_lotus/latest_articles/default.html', help_text='Used template for content formatting.', max_length=150, verbose_name='Template')),
                 ('categories', models.ManyToManyField(blank=True, help_text='Leave blank to avoid filtering by any category', to='lotus.category', verbose_name='Display articles related to following categories')),
                 ('tags', models.ManyToManyField(blank=True, help_text='Leave blank to avoid filtering by any tag', to='taggit.tag', verbose_name='Display articles related to following tags')),
             ],

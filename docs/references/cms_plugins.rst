@@ -3,6 +3,6 @@
 LatestArticlesPlugin
 ====================
 
-.. automodule:: lotus_cms_plugin.cms_plugins
+.. automodule:: cmsplugin_lotus.cms_plugins
     :members:
     :show-inheritance:

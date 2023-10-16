@@ -2,7 +2,7 @@
 .. _Click: https://click.palletsprojects.com
 
 ================
-lotus-cms-plugin
+cmsplugin-lotus
 ================
 
 A Django CMS plugin application package related to django-blog-lotus.
@@ -15,6 +15,6 @@ Dependencies
 Links
 *****
 
-* Read the documentation on `Read the docs <https://lotus-cms-plugin.readthedocs.io/>`_;
-* Download its `PyPi package <https://pypi.python.org/pypi/lotus-cms-plugin>`_;
-* Clone it on its `Github repository <https://github.com/emencia/lotus-cms-plugin>`_;
+* Read the documentation on `Read the docs <https://cmsplugin-lotus.readthedocs.io/>`_;
+* Download its `PyPi package <https://pypi.python.org/pypi/cmsplugin-lotus>`_;
+* Clone it on its `Github repository <https://github.com/emencia/cmsplugin-lotus>`_;

@@ -14,7 +14,7 @@
 Development
 ===========
 
-lotus-cms-plugin is developed with:
+cmsplugin-lotus is developed with:
 
 * *Test Development Driven* (TDD) using `Pytest`_;
 * Respecting flake and pip8 rules using `Flake8`_;
@@ -68,8 +68,8 @@ Deployment
 
 Once requirements are ready you can use the following commands: ::
 
-    git clone https://github.com/emencia/lotus-cms-plugin.git
-    cd lotus-cms-plugin
+    git clone https://github.com/emencia/cmsplugin-lotus.git
+    cd cmsplugin-lotus
     make install
 
 

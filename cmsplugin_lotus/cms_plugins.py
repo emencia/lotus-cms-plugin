@@ -3,12 +3,12 @@ from cms.plugin_pool import plugin_pool
 from django.db import models
 from django.forms import CheckboxSelectMultiple
 from django.utils.translation import gettext_lazy as _
-from lotus_cms_plugin.models import (
+from cmsplugin_lotus.models import (
     ArticlePluginParams,
     get_lotus_plugin_template_default
 )
-from lotus_cms_plugin.queryset_maker import ArticleQuerySetMaker
-from lotus_cms_plugin.utils.privacy_filters import apply_privacy_filter
+from cmsplugin_lotus.queryset_maker import ArticleQuerySetMaker
+from cmsplugin_lotus.utils.privacy_filters import apply_privacy_filter
 
 
 def filter_article_params(context, instance):
